@@ -1,15 +1,23 @@
-import {ButtonComponent} from './button.component';
-import { Story } from '@storybook/angular';
+import type { Meta, StoryObj } from '@storybook/angular';
+import { ButtonComponent } from './button.component';
 
-const Template: Story<ButtonComponent> = (args) => ({
-  props: args
-});
-
-export default {
+const meta: Meta<ButtonComponent> = {
   title: 'Components/Button',
-  component: ButtonComponent
+  component: ButtonComponent,
+  tags: ['autodocs'],
 };
 
-export const DefaultButton = Template.bind({});
+export const Default: StoryObj<ButtonComponent> = {
+  args: {
+    label: 'Hallo Welt',
+  },
+};
 
-DefaultButton.args = {};
+export const Secondary: StoryObj<ButtonComponent> = {
+  args: {
+    type: 'secondary',
+    label: 'Ein sekundärer Button',
+  },
+};
+
+export default meta;

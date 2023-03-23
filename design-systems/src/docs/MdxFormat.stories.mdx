@@ -1,12 +1,12 @@
 import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 import { moduleMetadata } from "@storybook/angular";
-import { ButtonModule } from "../app/button/button.module.ts";
+import { ButtonComponent } from "../app/button/button.component.ts";
 
 <Meta
   title="Docs/MDX Format"
   decorators={[
     moduleMetadata({
-      imports: [ButtonModule],
+      imports: [ButtonComponent],
     }),
   ]}
   parameters={{

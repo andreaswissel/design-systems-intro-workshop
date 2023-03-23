@@ -9,6 +9,7 @@
   "exclude": [
     "../src/test.ts",
     "../src/**/*.spec.ts",
+    "../src/**/*.cy.ts",
     "../projects/**/*.spec.ts"
   ],
   "include": [

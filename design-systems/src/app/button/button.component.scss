@@ -1,32 +1,33 @@
+@import "../../styles/colors";
+
 button {
-  background: #0085fc;
-
-  border: 1px solid #0357a3;
-  box-sizing: border-box;
-  box-shadow: inset 0px 2px 0px rgba(202, 230, 255, 0.15);
-  border-radius: 5px;
-
-  font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #ffffff;
-
+  display: inline-flex;
   padding: 11px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  background: $blue-400;
+  border: 1px solid $blue-700;
+
+  color: var(--alias-white, #fff);
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
   &.primary {
-    background: #0085fc;
-    border: 1px solid #0357a3;
+    background: $blue-400;
+    border: 1px solid $blue-700;
   }
 
   &.secondary {
-    background: #e4e8f3;
-    border: 1px solid #cbd0e1;
-    color: #041c31;
+    background: $gray-100;
+    border: 1px solid $gray-200;
+    color: $text-color;
   }
 }
